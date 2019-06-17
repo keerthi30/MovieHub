@@ -4,7 +4,6 @@ import androidx.annotation.MainThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.cengage.cendroid.commons.rest.Resource
 
 /**
  * A generic class that can provide a resource backed by both the sqlite database and the network.

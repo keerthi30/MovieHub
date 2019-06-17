@@ -1,4 +1,4 @@
-package com.cengage.cendroid.commons.rest
+package com.moviehub.mobile.rest
 
 /**
  * Status of a resource that is provided to the UI.

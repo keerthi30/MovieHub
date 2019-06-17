@@ -7,12 +7,16 @@ import com.moviehub.mobile.di.MovieHubModule
 
 /**
  * Created by kreddy on 2019-06-13
- * Copyright © 2018 Cengage Learning, Inc. All rights reserved.
  */
 class MovieHubApplication : Application() {
 
     companion object {
         lateinit var appComponent: MovieHubComponent
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        initDagger()
     }
 
     private fun initDagger() {
@@ -21,9 +25,4 @@ class MovieHubApplication : Application() {
         appComponent.inject(this)
     }
 
-    override fun onCreate() {
-        super.onCreate()
-
-        initDagger()
-    }
 }

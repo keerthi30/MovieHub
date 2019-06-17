@@ -7,7 +7,6 @@ import com.moviehub.mobile.movielist.MovieListDao
 
 /**
  * Created by kreddy on 2019-06-13
- * Copyright © 2018 Cengage Learning, Inc. All rights reserved.
  */
 @Database(entities = [Movie::class], version = 1)
 abstract class MovieHubDatabase: RoomDatabase() {

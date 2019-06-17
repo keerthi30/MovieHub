@@ -1,4 +1,4 @@
-package com.cengage.cendroid.commons.rest
+package com.moviehub.mobile.rest
 
 /**
  * A generic class that holds a value with its loading status.
