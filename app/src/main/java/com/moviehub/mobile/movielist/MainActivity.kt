@@ -86,17 +86,20 @@ class MainActivity : AppCompatActivity(), MovieListAdapter.MovieListListener {
         when (resource.status) {
             Status.LOADING -> {
                 progressBar.visibility = View.VISIBLE
+                errorTextView.visibility = View.GONE
             }
 
             Status.SUCCESS -> {
                 swipeRecycleView.isRefreshing = false
                 progressBar.visibility = View.GONE
+                errorTextView.visibility = View.GONE
             }
 
             Status.ERROR -> {
                 swipeRecycleView.isRefreshing = false
                 progressBar.visibility = View.GONE
                 if (adapter.itemCount == 0) {
+                    errorTextView.visibility = View.VISIBLE
                     errorTextView.text = "Connection error. Try again later"
                 }
             }
